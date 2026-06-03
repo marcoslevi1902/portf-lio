@@ -7,8 +7,6 @@ const CONFIG = {
   nome: 'Marcos Levi',
   email: 'marcoslevi1902@gmail.com',
   telefone: '5511920958755', // só números (com DDD)
-  github: 'https://github.com/seuusuario',
-  linkedin: 'https://linkedin.com/in/seuusuario',
 };
 
 /**
@@ -111,9 +109,6 @@ document.getElementById('contatoWhatsapp').href = `https://wa.me/${CONFIG.telefo
 document.getElementById('contatoWhatsapp').textContent = telFormatado;
 document.getElementById('contatoEmailBtn')?.setAttribute('href', `mailto:${CONFIG.email}`);
 document.querySelector('.contato__actions .btn--primary')?.setAttribute('href', `https://wa.me/${CONFIG.telefone}`);
-document.getElementById('linkGithub').href = CONFIG.github;
-document.getElementById('linkLinkedin').href = CONFIG.linkedin;
-document.getElementById('linkEmail').href = `mailto:${CONFIG.email}`;
 
 // Atualiza código no hero
 const codeName = document.querySelector('.code-window .s');
